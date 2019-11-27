@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>웹 연습장</title>
+    <mata charset="utf-8">
+</head>
+<body>
+    <h1>이희주</h1>
+    <a href="https://www.youtube.com/?gl=KR&hl=ko" target="_blank"><Strong>유튜브</Strong></a>
+        
+    <ol>
+        <li>이희주</li>
+        <li>노현준</li>
+        <li>윤혜원</li> 
+        <li>임우찬</li>
+    </ol>
+    <p>
+        안녕하세요<br>저는 이희주 입니다.
+    </p>
+    <table border='2'>
+        <tr>
+            <td>이름</td>
+            <td>성별</td>
+            <td>주소</td>
+        </tr>
+        <tr>
+            <td>이희주</td>
+            <td>남</td>
+            <td>주안</td>
+        </tr>
+        <tr>
+            <td>노현준</td>
+            <td>여</td>
+            <td>부평</td>
+        </tr>
+    </table>
+    <form method="post" action="http://localhost/login.jsp">
+        <label for="id">아이디 : </label><input id="id" type="text" name="id" value="아이디를 입력하세요"><br>
+        <label for="pwd">비밀번호 : </label><input id="pwd" type="password" name="pwd" value="1234"><br>
+        <label>자기소개 : <textarea cols="50" rows="10">자기소개를 하시오</textarea></label><br>
+        색상 : <select name="color">
+                    <option value="black">검정</option>
+                    <option value="red">빨강</option>
+                    <option value="blue">파랑</option>
+                </select>
+        <p>
+            색상 : 
+            <lable>검정<input type="radio" name="color2" value="black" checked></lable>
+            빨강<input type="radio" name="color2" value="red">
+            파랑<input type="radio" name="color2" value="blue">
+        </p>        
+        <p>
+            색상 : 
+            검정<input type="checkbox" name="color3" value="black" checked>
+            빨강<input type="checkbox" name="color3" value="red">
+            파랑<input type="checkbox" name="color3" value="blue">
+        </p>        
+        <p>
+            <input type="file" name="profile">
+        </p>
+        <input type=button value="안녕" onclick="alert('안녕')"><br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
