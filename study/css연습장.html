@@ -2,24 +2,32 @@
 <html>
   <head>
     <style>
-      li{
+      ul li{
         color:red;
-        text-decoration:underline;
       }
-      #select{
-        font-size:50px;
+      #lecture>li{
+        border:1px solid red;
       }
-      .deactive{
-        text-decoration: line-through;
+      ul,ol{
+        background-color: powderblue;
       }
     </style>
   </head>
   <body>
-    <h1 class="deactive">공부순서</h1>
     <ul>
-      <li class="deactive">HTML</li>
-      <li id="select">CSS</li>
-      <li class="deactive">JavaScript</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
     </ul>
+    <ol id="lecture">
+      <li>HTML</li>
+      <li>CSS
+        <ol>
+          <li>selector</li>
+          <li>declaration</li>
+        </ol>
+      </li>
+      <li>JavaScript</li>
+    </ol>
   </body>
 </html>
