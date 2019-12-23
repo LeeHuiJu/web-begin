@@ -2,23 +2,30 @@
 <html>
   <head>
     <style>
-        html{border:1px solid gray;}
-        div{
+        #parent, #other, #grand{
             border:5px solid tomato;
-            margin:10px;
+        }
+        #grand{
+            position: relative;
         }
         #me{
-            position: relative; /*원래 자기가 있어야하는 곳에서 움직임, static이 기본값*/
-            left:100px;
-            top:100px;
+            background-color: black;
+            color:white;
+            position: absolute; /*부모,자식 관계가 끝나고 static이 아닌 부모가 나타날때 그것을 기준으로 자리가 정해짐, 기본은 html*/
+            left:0;
+            top:0;
         }
     </style>
   </head>
   <body>
     <div id="other">other</div>
-    <div id="parent">
-       parent
-       <div id="me">me</div>
+    <div id="grand">
+       grand
+        <div id="parent">
+           parent
+           <div id="me">me</div>
+        </div>
     </div>
+     
   </body>
 </html>
