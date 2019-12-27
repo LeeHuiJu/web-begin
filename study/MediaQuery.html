@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media (max-width:600px){ /*cascading을 고려하여 더 작은 영역(구체적)의 구간이 뒤에 올 수 있도록*/
+            body{
+                background-color: green;
+            }
+        }
+        @media (max-width:500px){
+            body{
+                background-color: red;
+            }
+        }
+        @media (min-width:601px){
+            body{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+   <ul>
+       <li>~500px : red</li>
+       <li>501~600px : green</li>
+       <li>601px~ : blue</li>
+   </ul>
+</body>
+</html>
